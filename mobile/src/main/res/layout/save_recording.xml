@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/filenameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/filenameET"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@+id/filenameET"
+        android:text="File Name: "
+        android:paddingTop="15dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/filenameET"
+        android:hint="name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/notesTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filenameTV"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@+id/notesET"
+        android:paddingTop="20dp"
+        android:text="Notes: "
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/notesET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filenameET"
+        android:layout_centerHorizontal="true"
+        android:hint="add notes here"
+        android:lines="10"
+        android:paddingTop="20dp" />
+
+</RelativeLayout>

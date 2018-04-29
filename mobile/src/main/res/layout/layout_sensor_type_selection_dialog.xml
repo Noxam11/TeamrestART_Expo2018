@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Sensor Type"
+        style="@style/TextAppearance.AppCompat.Title"/>
+    <TextView
+        android:id="@+id/tv_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="For "/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d29f9f9f"/>
+    <TextView
+        android:id="@+id/tv_hand"
+        android:text="Hand"
+        style="@style/TextAppearance.AppCompat.Body1.TypeChoice"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d29f9f9f"/>
+    <TextView
+        android:id="@+id/tv_lower_arm"
+        android:text="Lower Arm"
+        style="@style/TextAppearance.AppCompat.Body1.TypeChoice"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d29f9f9f"/>
+    <TextView
+        android:id="@+id/tv_upper_arm"
+        android:text="Upper Arm"
+        style="@style/TextAppearance.AppCompat.Body1.TypeChoice"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d29f9f9f"/>
+    <TextView
+        android:id="@+id/tv_back"
+        android:text="Back"
+        style="@style/TextAppearance.AppCompat.Body1.TypeChoice"/>
+</LinearLayout>

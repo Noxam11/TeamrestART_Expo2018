@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    tools:context="com.example.nutri_000.testinggauge.DetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+
+
+
+
+
+
+
+
+        /*Button
+        android:id="@+id/scanButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="search for devices"
+        android:onClick="scanClicked"/>*/
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/relativethresholdNumber"
+            android:layout_weight="1"
+            android:scrollbars="none"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="60dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TableLayout
+                    android:id="@+id/movementtable"
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent">
+
+                    <TableRow style="@style/BodyRow">
+                        <TextView
+                            android:id="@+id/movementcounter0"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="0" />
+                        <TextView
+                            android:id="@+id/movement0"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:text="Movement Name" />
+                        <Button
+                            android:id="@+id/deletebutton0"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="x"
+                            android:onClick="deleteMovement" />
+                    </TableRow>
+                    <TableRow style="@style/BodyRow">
+                        <TextView
+                            android:id="@+id/movementcounter1"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="0" />
+                        <TextView
+                            android:id="@+id/movement1"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:text="Movement Name" />
+                        <Button
+                            android:id="@+id/deletebutton1"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="x"
+                            android:onClick="deleteMovement" />
+                    </TableRow>
+                    <TableRow style="@style/BodyRow">
+                        <TextView
+                            android:id="@+id/movementcounter2"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="0" />
+                        <TextView
+                            android:id="@+id/movement2"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:text="Movement Name" />
+                        <Button
+                            android:id="@+id/deletebutton2"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="x"
+                            android:onClick="deleteMovement" />
+                    </TableRow>
+                    <TableRow style="@style/BodyRow">
+                        <TextView
+                            android:id="@+id/movementcounter3"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="0" />
+                        <TextView
+                            android:id="@+id/movement3"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:text="Movement Name" />
+                        <Button
+                            android:id="@+id/deletebutton3"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="x"
+                            android:onClick="deleteMovement" />
+                    </TableRow>
+                    <TableRow style="@style/BodyRow">
+                        <TextView
+                            android:id="@+id/movementcounter4"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="0" />
+                        <TextView
+                            android:id="@+id/movement4"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:text="Movement Name" />
+                        <Button
+                            android:id="@+id/deletebutton4"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="x"
+                            android:onClick="deleteMovement" />
+                    </TableRow>
+                    <TableRow style="@style/BodyRow">
+                        <TextView
+                            android:id="@+id/movementcounter5"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="0" />
+                        <TextView
+                            android:id="@+id/movement5"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:text="Movement Name" />
+                        <Button
+                            android:id="@+id/deletebutton5"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="x"
+                            android:onClick="deleteMovement" />
+                    </TableRow>
+                    <TableRow style="@style/BodyRow">
+                        <TextView
+                            android:id="@+id/movementcounter6"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="0" />
+                        <TextView
+                            android:id="@+id/movement6"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:text="Movement Name" />
+                        <Button
+                            android:id="@+id/deletebutton6"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="x"
+                            android:onClick="deleteMovement" />
+                    </TableRow>
+                    <TableRow style="@style/BodyRow">
+                        <TextView
+                            android:id="@+id/movementcounter7"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="0" />
+                        <TextView
+                            android:id="@+id/movement7"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:text="Movement Name" />
+                        <Button
+                            android:id="@+id/deletebutton7"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="x"
+                            android:onClick="deleteMovement" />
+                    </TableRow>
+                    <TableRow style="@style/BodyRow">
+                        <TextView
+                            android:id="@+id/movementcounter8"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="0" />
+                        <TextView
+                            android:id="@+id/movement8"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:text="Movement Name" />
+                        <Button
+                            android:id="@+id/deletebutton8"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="x"
+                            android:onClick="deleteMovement" />
+                    </TableRow>
+                    <TableRow style="@style/BodyRow">
+                        <TextView
+                            android:id="@+id/movementcounter9"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="0" />
+                        <TextView
+                            android:id="@+id/movement9"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:text="Movement Name" />
+                        <Button
+                            android:id="@+id/deletebutton9"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="x"
+                            android:onClick="deleteMovement" />
+                    </TableRow>
+                    <TableRow style="@style/BodyRow">
+                        <TextView
+                            android:id="@+id/movementcounter10"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="0" />
+                        <TextView
+                            android:id="@+id/movement10"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:text="Movement Name" />
+                        <Button
+                            android:id="@+id/deletebutton10"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="x"
+                            android:onClick="deleteMovement" />
+                    </TableRow>
+                    <TableRow style="@style/BodyRow">
+                        <TextView
+                            android:id="@+id/movementcounter11"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="0" />
+                        <TextView
+                            android:id="@+id/movement11"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:text="Movement Name" />
+                        <Button
+                            android:id="@+id/deletebutton11"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="x"
+                            android:onClick="deleteMovement" />
+                    </TableRow>
+                    <TableRow style="@style/BodyRow">
+                        <TextView
+                            android:id="@+id/movementcounter12"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="0" />
+                        <TextView
+                            android:id="@+id/movement12"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:text="Movement Name" />
+                        <Button
+                            android:id="@+id/deletebutton12"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="x"
+                            android:onClick="deleteMovement" />
+                    </TableRow>
+                    <TableRow style="@style/BodyRow">
+                        <TextView
+                            android:id="@+id/movementcounter13"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="0" />
+                        <TextView
+                            android:id="@+id/movement13"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:text="Movement Name" />
+                        <Button
+                            android:id="@+id/deletebutton13"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="x"
+                            android:onClick="deleteMovement" />
+                    </TableRow>
+                    <TableRow style="@style/BodyRow">
+                        <TextView
+                            android:id="@+id/movementcounter14"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="0" />
+                        <TextView
+                            android:id="@+id/movement14"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:text="Movement Name" />
+                        <Button
+                            android:id="@+id/deletebutton14"
+                            style="@style/BodyText"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:text="x"
+                            android:onClick="deleteMovement" />
+                    </TableRow>
+
+
+
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/resetcounterbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:onClick="resetCounter"
+            android:text="Reset counter" />
+
+    </RelativeLayout>
+
+</android.widget.FrameLayout>
